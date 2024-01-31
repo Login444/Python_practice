@@ -40,10 +40,10 @@ print(params)
 #     :param kwargs:
 #     :return:
 #     """
-#     result = {}
+#     result_2 = {}
 #     for key, value in kwargs.items():
 #         if isinstance(value, (int, str, float, bool, tuple)):
-#             result[value] = key
+#             result_2[value] = key
 #         else:
-#             result[str(value)] = key
-#     return result
+#             result_2[str(value)] = key
+#     return result_2
