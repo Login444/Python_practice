@@ -23,4 +23,6 @@ def json_to_csv(filename: str):
             csv_write.writerow(row)
 
 
-json_to_csv('workers.json')
+my_string = input('Введи строку: ')
+my_string = my_string.title()
+print(my_string)
