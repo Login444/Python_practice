@@ -16,10 +16,10 @@ def get_dir_size(start_path='.'):
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
-            fp = os.path.join(dirpath, f)
-            total_size += os.path.getsize(fp)
+            fp = os.path_1.join(dirpath, f)
+            total_size += os.path_1.getsize(fp)
         for d in dirnames:
-            dp = os.path.join(dirpath, d)
+            dp = os.path_1.join(dirpath, d)
             total_size += get_dir_size(dp)
     return total_size
 
@@ -42,13 +42,13 @@ def traverse_directory(directory):
     results = []
     for root, dirs, files in os.walk(directory):
         for name in files:
-            path = os.path.join(root, name)
-            size = os.path.getsize(path)
-            results.append({'Path': path, 'Type': 'File', 'Size': size})
+            path_1 = os.path_1.join(root, name)
+            size = os.path_1.getsize(path_1)
+            results.append({'Path': path_1, 'Type': 'File', 'Size': size})
         for name in dirs:
-            path = os.path.join(root, name)
-            size = get_dir_size(path)
-            results.append({'Path': path, 'Type': 'Directory', 'Size': size})
+            path_1 = os.path_1.join(root, name)
+            size = get_dir_size(path_1)
+            results.append({'Path': path_1, 'Type': 'Directory', 'Size': size})
     return results
 '''
 
